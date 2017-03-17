@@ -22,6 +22,7 @@ public class SteamBot extends JBA {
     @Override
     public void run() {
        registerCommand(new SearchCommand());
+       registerCommand(new HelpCommand());
        LOGGER.info("Started");
     }
     public static String getMessage(String[] args, int min) {
